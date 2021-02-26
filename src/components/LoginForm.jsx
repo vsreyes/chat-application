@@ -1,9 +1,9 @@
 import axios from 'axios';
-import React from 'react'
+import { useState } from 'react'
 
 const LoginForm = () => {
   const [username, setUsername ] = useState('');
-  const [password, setUsername ] = useState('');
+  const [password, setPassword ] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,4 +39,5 @@ const LoginForm = () => {
   )
 }
 
+export default LoginForm
 
