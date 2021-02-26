@@ -1,5 +1,5 @@
+import { useState } from 'react';
 import axios from 'axios';
-import { useState } from 'react'
 
 const LoginForm = () => {
   const [username, setUsername ] = useState('');
@@ -15,7 +15,8 @@ const LoginForm = () => {
       
       localStorage.setItem('username', username);
       localStorage.setItem('password', password);
-    
+
+      window.location.reload();
     } catch (error) {
       
     }
